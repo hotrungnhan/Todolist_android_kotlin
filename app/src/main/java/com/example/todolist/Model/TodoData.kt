@@ -34,5 +34,5 @@ interface TodoDao {
     fun countDone(): Int
 
     @Query("SELECT count(*) FROM TodoData  WHERE Tododata.done_state == 0 ")
-    fun countUnDone(): Int
+    fun countUnDone():Int
 }
